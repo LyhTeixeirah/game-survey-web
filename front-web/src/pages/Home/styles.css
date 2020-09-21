@@ -1,0 +1,176 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.home-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .home-text {
+    width: 400px;
+    margin-right: 100px;
+  }
+  
+  .home-text-title {
+    font-size: 48px;
+    color: var(--color-turquoise);
+  }
+
+  .home-text-title span{
+    font-size: 68px;
+    color: var(--color-coral);
+  }
+  
+  .home-text-subtitle {
+    font-size: 20px;
+    color: var(--color-coral);
+  }
+  
+  .home-actions {
+    display: flex;
+    height: 60px;
+    width: 410px;
+    margin-top: 100px;
+    border-radius: 8px;
+  }
+
+  .home-actions:hover {
+    background-color: transparent;
+    box-shadow: 0 4px 15px 0 rgba(49, 200, 190, 0.75);
+    color: aliceblue;
+  }
+  
+  .home-btn {
+    background-color: var(--color-turquoise);
+    border-radius: 8px 0px 0px 8px;
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 85px;
+  
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .home-btn span{
+    color: var(--color-coral);
+  }
+  
+  .home-btn:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    background-image: linear-gradient(to right, #25aae0, #8ff, var(--color-coral));
+  }
+
+  .home-btn:focus {
+    outline: none;
+}
+  
+  .home-btn-icon {
+    border-radius: 0px 8px 8px 0px;
+    width: 80px;
+    background-color: var(--color-coral);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* responsive */
+  
+  @media (max-width: 1200px) {
+    .home-image {
+      max-width: 350px;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .home-image {
+      max-width: 350px;
+      height: auto;
+    }
+  
+    .home-text-title {
+      font-size: 45px;
+    }
+    
+    .home-text-subtitle {
+      font-size: 20px;
+    }
+  
+    .home-text {
+      width: 410px;
+      margin-right: 20px;
+    }
+  
+    .home-btn {
+      font-size: 18px;
+      padding: 10px 25px;
+    }
+  
+    .home-actions {
+      margin-top: 40px;
+    }
+  }
+  
+  @media (max-width: 850px) {
+    .home-container {
+      margin-top: 50px;
+    }
+  
+    .home-actions {
+      height: 50px;
+      justify-content: center;
+    }
+  
+    .home-image {
+      display: none;
+      
+    }
+  
+    .home-text {
+      margin-right: 0;
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+
+/* My config Screen (1366x768) WXGA Display */
+@media (max-width: 1366px) {
+  .home-image {
+    max-width: 550px;
+    height: auto;
+  }
+
+  .home-text-title {
+    font-size: 50px;
+  }
+  
+  .home-text-subtitle {
+    font-size: 20px;
+  }
+
+  .home-text {
+    width: 410px;
+    margin-right: 100px;
+  }
+
+  .home-btn {
+    font-size: 18px;
+    padding: 10px 70px;
+  }
+
+  .home-actions {
+    margin-top: 40px;
+  }
+}
